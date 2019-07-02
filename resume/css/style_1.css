@@ -1,0 +1,38 @@
+body,h1,h2,ul{
+    margin: 0;
+    padding:0;
+     color: #333333;
+}
+.box{
+    margin: 10px;
+    background-color: #f8f8f8;
+    padding: 20px;
+
+}
+.box h1,.box h2{
+    font-family: "黑体";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+}
+.person_info li,.tel_info li{
+    float: left;
+    width: 250px;
+    margin: 10px 10px 10px 0;
+}
+.ability_info li,.education_info li,.project_info li{
+     width: 250px;
+     margin-top: 15px;
+}
+.project_info li{
+    width: 350px;
+}
+.person_info li span,.tel_info li span,.ability_info li span,.education_info li span,.project_info li span{
+    font-weight: bold;
+}
+.ability_info li span:nth-of-type(2),.education_info li span:nth-of-type(2),.project_info li span:nth-of-type(2) {
+    font-weight: normal;
+    display: block;
+}

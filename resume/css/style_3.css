@@ -1,0 +1,59 @@
+body,h1,h2,ul{
+    margin: 0;
+    padding:0;
+     color: #333333;
+}
+.box{
+    margin: 10px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+}
+.box h1{
+    background-color: #bbbbbb;
+    color: #ffffff;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.box .content{
+    width: 100%;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.box .content h2{
+    width: 100px;
+    height: 100px;
+    background-color: #f5f5f5;
+    font-size: 17px;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+.content ul{
+    height: 85px;
+    border-bottom: 2px solid #f7f7f7;
+    background-color: #ffffff;
+    padding-top: 15px;
+    text-indent: 20px;
+}
+.person_info li,.tel_info li{
+    float: left;
+    margin-right: 30px;
+    font-size: 15px;
+}
+.person_info li span,.tel_info li span,.ability_info li span,.education_info li span,.project_info li span{
+    font-weight: bold;
+}
+.ability_info li,.education_info li,.project_info li{
+    font-size: 15px;
+    word-break: keep-all;
+}
+.ability_info li span:nth-of-type(2),.education_info li span:nth-of-type(2),.project_info li span:nth-of-type(2) {
+    font-weight: normal;
+}
+
+
