@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局03</title>
+    <style type="text/css">
+    /*三列布局，其中左右两列定宽，中间一列自适应*/
+        /*使用float，负margin 和position*/
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .content{
+            width: 90%;
+            padding-left: 200px;
+            padding-right:200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: #f66;
+            width: 100%;
+            height: 100px;
+            float: left;
+        }
+        .left{
+            background-color: #fcc;
+            width: 200px;
+            float: left;
+            margin-left:-100%;/*得到父元素的宽度，即left将会跑到main的左边*/
+            position: relative;
+            left: -200px;
+            height: 50px;
+
+        }
+        .right{
+            position: relative;
+            right: -200px;
+            background-color: #fcc;
+            width: 200px;
+            float: left;
+            height: 80px;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+            中间自适应区域中间自适应区域中间自适应区域中间自适应区域
+        </div>
+        <div class="left">
+            左边区域左边区域左边区域左边区域左边区域
+        </div>
+        <div class="right">
+            右边区域右边区域右边区域右边区域右边区域右边区域
+        </div>
+    </div>
+</body>
+</html>

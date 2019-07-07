@@ -1,0 +1,141 @@
+body,ul{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+.header{
+    background-color: #262626;
+    height: 100px;
+}
+.header .header_con{
+    position: relative;
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+   /*border: 5px solid red;*/
+}
+.header .header_con .logo{
+    color: #ffffff;
+    line-height: 100px;
+    font-size: 30px;
+}
+.header .header_con .link{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+}
+.link li{
+    float: left;
+    margin-left: 10px;
+}
+.link li a{
+    color: #ffffff;
+}
+.banner{
+    width: 100%;
+    background-color: #37ab40;
+    position: relative;
+}
+.banner .banner_box{
+    position: relative;
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+.banner .banner_btn{
+    position: absolute;
+    right: 0;
+    bottom:10px;
+}
+.banner .banner_btn li{
+    float: left;
+    width: 20px;
+    height: 30px;
+    color: #5e5e5e;
+    line-height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    border: 1px solid #a8a8a8;
+    background-color: #5cb85c;
+}
+.banner .banner_btn .btn_anctive{
+    height: 30px;
+    background-color: #edfff9;
+    margin-top: -15px;
+    padding-top: 15px;
+}
+.main{
+    width: 100%;
+    margin-top: 20px;
+}
+.main .list_box{
+    border-bottom: 1px solid #a8a8a8;
+}
+.main .list_box .list{
+    width: 960px;
+    margin: 0 auto;
+    height: 50px;
+}
+.main .list li{
+    float: left;
+    width: 100px;
+    border-top: 1px solid #a8a8a8;
+    border-right: 1px solid #a8a8a8;
+    border-left: 1px solid #a8a8a8;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    background-color: #cccccc;
+}
+.main .list li a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 49px;
+    line-height: 49px;
+    text-decoration: none;
+    color: #000000;
+}
+.list li.list_active{
+    background-color: #ffffff;
+    height: 50px;
+}
+.main .main_content{
+    width: 960px;
+    margin: 10px auto;
+}
+.main_content [class$="Grid"]{
+    width: 100%;
+    display: flex;
+}
+.main_content [class$="cell"]{
+    display: inline-block;
+    flex: auto;
+    border: 1px solid #a8a8a8;
+    padding: 80px;
+    margin: 5px;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 5px;
+    background-color: #333333;
+    opacity: 0.6;
+    height: 100px;
+}
+.footer .footer_con{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+
+
+
+
+

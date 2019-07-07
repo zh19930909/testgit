@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局02</title>
+    <style type="text/css">
+        /*左侧固定宽度，右侧自适应*/
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        /*方法1 双float*/
+        .box01{
+            width: 90%;
+            margin: 20px auto;
+            overflow: auto;
+            box-sizing: content-box;
+        }
+        .box01 .left{
+            float: left;
+            width: 200px;
+            background-color: #5CA716;
+            box-sizing: border-box;
+        }
+        .box01 .right {
+            float: left;
+            margin-left: 20px;
+            width: calc(100% - 220px);
+            background-color: #ff8800;
+        }
+
+        /*方法2 float + margin-left*/
+        .box02{
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .box02 .left{
+            float: left;
+            width: 200px;
+            background-color: #5CA716;
+        }
+        .box02 .right{
+            margin-left: 220px;
+            background-color: #ff8800;
+        }
+        /*方法三 flex布局*/
+        .box03{
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+        }
+        .box03 .left{
+            width: 200px;
+            flex: 0 0 auto;
+            background-color: #5CA716;
+        }
+        .box03 .right{
+            flex: 1 1 auto;
+            background-color: #ff8800;
+        }
+    </style>
+</head>
+<body>
+    <div class="box01">
+        <div class="left">200px</div>
+        <div class="right">自适应</div>
+    </div>
+<div class="box02">
+        <div class="left">200px</div>
+        <div class="right">自适应</div>
+    </div>
+<div class="box03">
+        <div class="left">200px</div>
+        <div class="right">自适应</div>
+    </div>
+</body>
+</html>
